@@ -1,4 +1,4 @@
-baseURL = "https://qaz5823091.github.io/"
+baseURL = "https://ericodingtwiceaweak.github.io/"
 title = "羲加加的部落格"
 paginate = 5
 theme = "PaperMod"
@@ -60,7 +60,7 @@ showtoc = true
 
   [[params.socialIcons]]
   name = "github"
-  url = "https://github.com/qaz5823091"
+  url = "https://github.com/ericodingtwiceaweak"
 
   [[params.socialIcons]]
   name = "facebook"
