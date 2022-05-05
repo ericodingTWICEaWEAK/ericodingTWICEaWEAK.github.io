@@ -32,8 +32,7 @@ AC五題 (98/2561) 時間650min 同場考試前3.8%
     
 ## 競賽紀錄
 
-### <font color="#ff0">國中 at 三民高中國中部
-</font> 
+### <font color="#ff0">國中 at 三民高中國中部 </font> 
     
 - 新北市Scratch競賽 創意秀組 <font color="#0f0">特優</font>
     
@@ -41,8 +40,7 @@ AC五題 (98/2561) 時間650min 同場考試前3.8%
     
 - Maker!翻轉學習．創意環教 <font color="#0f0">優選</font>
 
-### <font color="#ff0">高中 at 新北高中
-</font> 
+### <font color="#ff0">高中 at 新北高中 </font> 
 
 #### <font color="#aaf">高一時期
 </font> 
@@ -79,21 +77,19 @@ AC五題 (98/2561) 時間650min 同場考試前3.8%
     
 - <font color="#ff0">作品</font>
     
-    - <font color="#aaf">國中 in 三民高中國中部
-</font> 
+    - <font color="#aaf">國中 in 三民高中國中部 </font> 
     
-        - 新北之歌．創意拼圖 
+        新北之歌．創意拼圖 
     
-        - 環保桌遊—海洋吸塵器  
+        環保桌遊—海洋吸塵器  
     
-    - <font color="#aaf">高中 in 新北高中
-</font> 
+    - <font color="#aaf">高中 in 新北高中 </font> 
     
-         - 自主學習 <font color="#0f0">使用C++還原爆爆王</font>
+        自主學習 <font color="#0f0"> 使用C++還原爆爆王</font>
     
-        - 科展專題 <font color="#0f0">AI火災偵測器</font>
+        科展專題 <font color="#0f0"> AI火災偵測器</font>
     
-        - 自主學習 <font color="#0f0">DNA粗萃取材料替換之研究</font>
+        自主學習 <font color="#0f0">DNA粗萃取材料替換之研究</font>
 
 ### <font color="#ff0">曾任職位</font>
     
