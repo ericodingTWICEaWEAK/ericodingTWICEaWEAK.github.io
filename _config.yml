@@ -241,8 +241,7 @@ social:
 
 
 # Sidebar Avatar
-# in directory: /assets/images/avatar.gif
-#avatar:
+avatar: http://ericodingtwiceaweak.github.io/assets/images/avatar.gif
 
 
 # Table Of Contents in the Sidebar
