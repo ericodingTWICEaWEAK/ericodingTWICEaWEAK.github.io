@@ -228,7 +228,16 @@ social_icons:
   # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
   GitHub: github
   Twitter: twitter
-  Weibo: weibo
+  Facebook: facebook
+  Instagram: instagram
+  Discord: discord
+
+#social link
+social:
+  GitHub: https://github.com/ericodingTWICEaWEAK
+  Facebook: https://www.facebook.com/profile.php?id=100000336052595
+  Instagram: https://www.instagram.com/ericoding_wa/
+  Discord: https://discordapp.com/users/%E9%9F%B3%E9%8A%93#4348
 
 
 # Sidebar Avatar
@@ -353,7 +362,7 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night
 
 
 # ---------------------------------------------------------------
