@@ -6,7 +6,7 @@
 # Site
 title: EriCoding
 subtitle:
-description:
+description: 一直WA一直爽
 author: 陳音銓
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: zh-tw
@@ -151,9 +151,9 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+#scheme: Muse
 #scheme: Mist
-#scheme: Pisces
+scheme: Pisces
 
 
 # ---------------------------------------------------------------
@@ -230,14 +230,12 @@ social_icons:
   Twitter: twitter
   Facebook: facebook
   Instagram: instagram
-  Discord: discord
 
 #social link
 social:
   GitHub: https://github.com/ericodingTWICEaWEAK
   Facebook: https://www.facebook.com/profile.php?id=100000336052595
   Instagram: https://www.instagram.com/ericoding_wa/
-  Discord: https://discordapp.com/users/%E9%9F%B3%E9%8A%93#4348
 
 
 # Sidebar Avatar
