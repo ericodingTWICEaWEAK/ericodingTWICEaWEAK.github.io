@@ -230,7 +230,7 @@ social_icons:
   Twitter: twitter
   Facebook: facebook
   Instagram: instagram
-  Discord: brands fa-discord
+  Discord: code
 
 #social link
 social:
@@ -497,11 +497,11 @@ duoshuo_info:
 # Facebook SDK Support.
 # https://github.com/iissnan/hexo-theme-next/pull/410
 facebook_sdk:
-  enable: false
-  app_id:       #<app_id>
-  fb_admin:     #<user_id>
-  like_button:  #true
-  webmaster:    #true
+  enable: true
+  app_id: <app_id>
+  fb_admin: <user_id>
+  like_button: true
+  webmaster: true
 
 # Facebook comments plugin
 # This plugin depends on Facebook SDK.
