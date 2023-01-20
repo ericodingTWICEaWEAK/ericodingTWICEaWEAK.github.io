@@ -1,1 +1,1 @@
-document.write(HELLO)
+document.write(HELLO);
