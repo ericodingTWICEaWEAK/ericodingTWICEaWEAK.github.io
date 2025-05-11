@@ -1,22 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Countdown Test</title>
-  <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" />
-</head>
-<body>
-  <div id="mocha"></div>
-  <div id="test-container"></div>
-  <script src="https://unpkg.com/mocha/mocha.js"></script>
-  <script src="https://unpkg.com/chai/chai.js"></script>
-  <script>
-    mocha.setup("bdd");
-  </script>
-  <script src="../coroutine/countdown.js"></script>
-  <script src="../coroutine/test/countdown.test.js"></script>
-  <script>
-    mocha.run();
-  </script>
-</body>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Countdown Test</title>
+    <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" />
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <div id="test-container"></div>
+
+    <script src="https://unpkg.com/mocha/mocha.js"></script>
+    <script src="https://unpkg.com/chai/chai.js"></script>
+    <script>
+      mocha.setup("bdd");
+    </script>
+
+    <script src="../countdown.js"></script>
+    <script src="./countdown.test.js"></script>
+
+    <script>
+      mocha.run();
+    </script>
+  </body>
 </html>

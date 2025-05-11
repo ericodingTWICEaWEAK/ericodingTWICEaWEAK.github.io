@@ -1,21 +1,26 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Countdown Coroutine</title>
+  <title>Coroutine Countdown</title>
   <style>
-    #container div {
-      margin: 10px;
-      padding: 10px;
-      border: 1px solid gray;
-      font-size: 24px;
-      display: inline-block;
-    }
+    body { font-family: sans-serif; text-align: center; padding-top: 40px; background: #eef; }
+    .countdown-container { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+    .countdown-block { background: white; padding: 20px; font-size: 2rem; border-radius: 10px; width: 80px; height: 80px; display: flex; justify-content: center; align-items: center; }
   </style>
 </head>
 <body>
-  <button onclick="addCountdown(document.getElementById('container'), 5)">Add Countdown</button>
-  <div id="container"></div>
-  <script src="countdown.js"></script>
+  <h1>Coroutine Countdown</h1>
+  <button onclick="handleAdd()">新增倒數</button>
+  <div id="container" class="countdown-container"></div>
+
+  <script type="module">
+    import { addCountdown } from './countdown.js';
+    window.handleAdd = () => {
+      const container = document.getElementById('container');
+      addCountdown(container, 5);
+    };
+  </script>
 </body>
 </html>
