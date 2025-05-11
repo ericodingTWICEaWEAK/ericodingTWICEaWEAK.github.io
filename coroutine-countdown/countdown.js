@@ -1,29 +1,26 @@
-function addCountdown(container, seconds) {
-  const id = "countdown-" + Date.now() + Math.random().toString(36).slice(2, 5);
-  const el = document.createElement("div");
-  el.id = id;
-  el.textContent = "?";
-  el.style.margin = "10px";
-  el.style.padding = "10px";
-  el.style.border = "1px solid gray";
-  container.appendChild(el);
+const expect = chai.expect;
 
-  countdown(seconds, (num) => {
-    el.textContent = num === 0 ? "Done" : num;
-  }).then(() => {
-    el.remove();
+describe("Coroutine Countdown", function () {
+  this.timeout(10000);
+
+  beforeEach(() => {
+    const container = document.getElementById("test-container");
+    container.innerHTML = '<div id="container"></div>';
   });
 
-  return id;
-}
+  it("should create countdown block", () => {
+    const container = document.getElementById("container");
+    const id = addCountdown(container, 3);
+    const el = document.getElementById(id);
+    expect(el).to.exist;
+    expect(el.textContent).to.equal("?");
+  });
 
-function delay(ms) {
-  return new Promise((res) => setTimeout(res, ms));
-}
-
-async function countdown(n, onTick) {
-  for (let i = n; i >= 0; i--) {
-    onTick(i);
-    await delay(1000);
-  }
-}
+  it("should remove block after countdown", async () => {
+    const container = document.getElementById("container");
+    const id = addCountdown(container, 1);
+    await delay(2500);
+    const el = document.getElementById(id);
+    expect(el).to.not.exist;
+  });
+});
