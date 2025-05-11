@@ -1,5 +1,3 @@
-const expect = chai.expect;
-
 describe("Coroutine Countdown", function () {
   this.timeout(10000);
 
