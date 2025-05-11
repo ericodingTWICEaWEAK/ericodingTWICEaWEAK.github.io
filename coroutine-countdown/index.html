@@ -5,21 +5,48 @@
   <title>Coroutine Countdown</title>
   <style>
     body { font-family: sans-serif; text-align: center; padding-top: 40px; background: #eef; }
-    .countdown-container { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
-    .countdown-block { background: white; padding: 20px; font-size: 2rem; border-radius: 10px; width: 80px; height: 80px; display: flex; justify-content: center; align-items: center; }
+    .countdown-container {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .countdown-block {
+      background: white;
+      padding: 20px;
+      font-size: 2rem;
+      border-radius: 10px;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    button {
+      padding: 12px 24px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 10px;
+      background: #3498db;
+      color: white;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
   <h1>Coroutine Countdown</h1>
-  <button onclick="handleAdd()">新增倒數</button>
+  <button id="addBtn">新增倒數</button>
   <div id="container" class="countdown-container"></div>
 
-  <script type="module">
-    import { addCountdown } from './countdown.js';
-    window.handleAdd = () => {
+  <!-- 1) 載入 countdown.js（全域 addCountdown, delay, countdown） -->
+  <script src="countdown.js"></script>
+  <!-- 2) 綁定按鈕事件到全域函式 -->
+  <script>
+    document.getElementById('addBtn').addEventListener('click', () => {
       const container = document.getElementById('container');
       addCountdown(container, 5);
-    };
+    });
   </script>
 </body>
 </html>
