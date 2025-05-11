@@ -10,7 +10,7 @@
     }
   }
 
-  function addCountdown(container, seconds) {
+  async function addCountdown(container, seconds) {
     const id = "cd-" + Date.now() + "-" + Math.random().toString(36).slice(2,5);
     const el = document.createElement("div");
     el.id = id;
