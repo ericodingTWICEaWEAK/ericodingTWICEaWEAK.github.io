@@ -1,20 +1,26 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Countdown Test</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/10.2.0/mocha.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <title>Coroutine Countdown</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; padding-top: 40px; background: #eef; }
+    .countdown-container { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+    .countdown-block { background: white; padding: 20px; font-size: 2rem; border-radius: 10px; width: 80px; height: 80px; display: flex; justify-content: center; align-items: center; }
+  </style>
 </head>
 <body>
-  <div id="mocha"></div>
-  <div id="test-container"></div>
+  <h1>Coroutine Countdown</h1>
+  <button onclick="handleAdd()">新增倒數</button>
+  <div id="container" class="countdown-container"></div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/10.2.0/mocha.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script>mocha.setup("bdd");</script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.3.7/chai.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-  <script src="countdown.js"></script>
-  <script src="test/countdown.test.js"></script>
-  <script>mocha.run();</script>
+  <script type="module">
+    import { addCountdown } from './countdown.js';
+    window.handleAdd = () => {
+      const container = document.getElementById('container');
+      addCountdown(container, 5);
+    };
+  </script>
 </body>
 </html>
