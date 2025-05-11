@@ -1,25 +1,32 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Countdown Test</title>
-    <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" />
-  </head>
-  <body>
-    <div id="mocha"></div>
-    <div id="test-container"></div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Countdown Test</title>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/mocha/10.2.0/mocha.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div id="mocha"></div>
+  <div id="test-container"></div>
 
-    <script src="https://unpkg.com/mocha/mocha.js"></script>
-    <script src="https://unpkg.com/chai/chai.js"></script>
-    <script>
-      mocha.setup("bdd");
-    </script>
+  <!-- 1) Mocha -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/10.2.0/mocha.min.js"
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>mocha.setup("bdd");</script>
 
-    <script src="./countdown.js"></script>
-    <script src="./test/countdown.test.js"></script>
+  <!-- 2) Chai -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.3.7/chai.min.js"
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script>
-      mocha.run();
-    </script>
-  </body>
+  <!-- 3) 你的倒數邏輯 -->
+  <script src="countdown.js"></script>
+
+  <!-- 4) 改成使用 assert 的測試檔 -->
+  <script src="test/countdown.test.js"></script>
+
+  <!-- 5) 啟動 Mocha -->
+  <script>mocha.run();</script>
+</body>
 </html>
