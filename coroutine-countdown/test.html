@@ -11,22 +11,17 @@
   <div id="mocha"></div>
   <div id="test-container"></div>
 
-  <!-- 1) Mocha -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/10.2.0/mocha.min.js"
           crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>mocha.setup("bdd");</script>
 
-  <!-- 2) Chai -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.3.7/chai.min.js"
           crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-  <!-- 3) 你的倒數邏輯 -->
   <script src="countdown.js"></script>
 
-  <!-- 4) 改成使用 assert 的測試檔 -->
   <script src="test/countdown.test.js"></script>
 
-  <!-- 5) 啟動 Mocha -->
   <script>mocha.run();</script>
 </body>
 </html>
