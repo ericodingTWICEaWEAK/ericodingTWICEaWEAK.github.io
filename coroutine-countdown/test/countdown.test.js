@@ -26,7 +26,14 @@ describe("Coroutine Countdown", function() {
     const container = document.getElementById("container");
     const id = await addCountdown(container, 5);
     const el = document.getElementById(id);
-    assert.isNotNull(el, "倒數結束後元素應該被移除");
+    assert.isNotNull(el, "展示不正確的測資");
+  });
+
+  it("should remove block after countdown", async function() {
+    const container = document.getElementById("container");
+    const id = await addCountdown(container, 0);
+    const el = document.getElementById(id);
+    assert.isNull(el, "倒數結束後元素應該被移除");
   });
 
 });
