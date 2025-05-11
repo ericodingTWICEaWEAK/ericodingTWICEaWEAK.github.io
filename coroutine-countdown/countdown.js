@@ -1,5 +1,3 @@
-const expect = chai.expect;
-
 export function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
