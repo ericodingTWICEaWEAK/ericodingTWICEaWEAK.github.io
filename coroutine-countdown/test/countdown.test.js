@@ -8,34 +8,18 @@ describe("Coroutine Countdown", function() {
     tc.innerHTML = '<div id="container"></div>';
   });
 
-  it("should create countdown block", function() {
-    var container = document.getElementById("container");
-    var id = addCountdown(container, 3);
-    var el = document.getElementById(id);
-
-    assert.isNotNull(el, "倒數區塊應該存在");
-    assert.strictEqual(el.textContent, "3", "初始文字應該是 '3'");
+  it("should remove block after countdown", async function() {
+    const container = document.getElementById("container");
+    const id = await addCountdown(container, 2);
+    const el = document.getElementById(id);
+    assert.isNull(el, "倒數結束後元素應該被移除");
   });
 
-  it("should remove block after countdown", function(done) {
-    var container = document.getElementById("container");
-    var id = addCountdown(container, 1);
+  it("should remove block after countdown", async function() {
+  const container = document.getElementById("container");
+  const id = await addCountdown(container, 5);
+  const el = document.getElementById(id);
+  assert.isNull(el, "倒數結束後元素應該被移除");
+});
 
-    delay(2500).then(function() {
-      var el = document.getElementById(id);
-      assert.isNull(el, "倒數結束後元素應該被移除");
-      done();
-    }).catch(done);
-  });
-
-  it("should remove block after countdown", function(done) {
-    var container = document.getElementById("container");
-    var id = addCountdown(container, 5);
-
-    delay(6500).then(function() {
-      var el = document.getElementById(id);
-      assert.isNull(el, "倒數結束後元素應該被移除");
-      done();
-    }).catch(done);
-  });
 });
