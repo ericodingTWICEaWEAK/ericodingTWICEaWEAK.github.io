@@ -37,3 +37,45 @@ describe("Coroutine Countdown", function() {
   });
 
 });
+
+describe("", function () {
+  this.timeout(10000);
+
+  beforeEach(function () {
+    var tc = document.getElementById("test-container");
+    tc.innerHTML = '<div id="container"></div>';
+  });
+
+  it("should remove block after countdown", async function () {
+    const container = document.getElementById("container");
+    const promises = [
+      addCountdown(container, 2),
+      addCountdown(container, 5),
+      addCountdown(container, 5),
+      addCountdown(container, 0)
+    ];
+
+    const results = await Promise.all(promises);
+
+    results.forEach((id) => {
+      const el = document.getElementById(id);
+      assert.isNull(el, "倒數結束後元素應該被移除");
+    });
+  });
+
+  it("should remove block after countdown for multiple", async function () {
+    const container = document.getElementById("container");
+    const promises = [
+      addCountdown(container, 2),
+      addCountdown(container, 3),
+      addCountdown(container, 4)
+    ];
+
+    const results = await Promise.all(promises);
+
+    results.forEach((id) => {
+      const el = document.getElementById(id);
+      assert.isNull(el, "倒數結束後元素應該被移除");
+    });
+  });
+});
