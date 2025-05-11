@@ -3,9 +3,6 @@ function addCountdown(container, seconds) {
   const el = document.createElement("div");
   el.id = id;
   el.textContent = "?";
-  el.style.margin = "10px";
-  el.style.padding = "10px";
-  el.style.border = "1px solid gray";
   container.appendChild(el);
 
   countdown(seconds, (num) => {
