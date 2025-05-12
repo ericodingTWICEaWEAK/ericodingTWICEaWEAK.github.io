@@ -10,9 +10,8 @@
     }
   }
 
-  function addCountdown(container, seconds) {
+  function addCountdown(container, seconds, id) {
     return new Promise(resolve => {
-      const id = "cd-" + Date.now() + Math.random().toString(36).slice(2, 5);
       const el = document.createElement("div");
       el.id = id;
       el.className = "countdown-block";
