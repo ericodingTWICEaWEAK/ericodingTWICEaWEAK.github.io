@@ -51,23 +51,6 @@ describe("Coroutine Countdown", function() {
     assert.isNull(el, "倒數結束後元素應該被移除");
   });
 
-  it("測試3秒後的addCountdown(5秒)輸出是否正確(為2)", function () {
-    return new Promise((resolve, reject) => {
-    const container = document.getElementById("container");
-    const id = "cd-" + Date.now() + Math.random().toString(36).slice(2, 5);
-    addCountdown(container, 5, id).then(() => {
-      el = document.getElementById(id);
-      try {
-        assert.isNull(el, "倒數結束後元素應該被移除");
-        resolve()
-      }
-      catch (err) {
-        reject(err)
-      }
-    })
-    })
-  });
-
   it("錯誤測資範例 5秒倒數計時，3秒時顯示1秒", async function () {
     const container = document.getElementById("container");
     const id = "cd-" + Date.now() + Math.random().toString(36).slice(2, 5);
