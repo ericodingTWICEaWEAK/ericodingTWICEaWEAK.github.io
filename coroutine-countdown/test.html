@@ -9,23 +9,30 @@
   <style>
         body { font-family: sans-serif; padding-top: 40px; }
         .countdown-block {
-        background: white;
-        padding: 20px;
-        font-size: 2rem;
-        border-radius: 10px;
-        width: 80px;
-        height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 10px auto;
-        color: black;
+          background: white;
+          padding: 20px;
+          font-size: 2rem;
+          border-radius: 10px;
+          width: 80px;
+          height: 80px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 10px;
+          color: black;
+        }
+        #container {
+          margin-top: 20px;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+          justify-content: center;
         }
   </style>
 </head>
 <body>
   <div id="mocha"></div>
-  <div id="test-container"></div>
+  <div id="test-container" class="test-container"></div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/10.2.0/mocha.min.js"
           crossorigin="anonymous" referrerpolicy="no-referrer"></script>
