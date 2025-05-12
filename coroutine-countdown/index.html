@@ -43,7 +43,8 @@
   <script>
     document.getElementById('addBtn').addEventListener('click', () => {
       const container = document.getElementById('container');
-      addCountdown(container, 5);
+      id = "cd-" + Date.now() + Math.random().toString(36).slice(2, 5);
+      addCountdown(container, 5, id);
     });
   </script>
 </body>
